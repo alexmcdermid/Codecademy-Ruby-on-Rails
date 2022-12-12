@@ -1,0 +1,11 @@
+<%= form_with url: "/signup", method: :post do |form| %>
+  <div class="d-flex flex-column" style="width:50vw;margin:auto;">
+    <h2 style="margin:auto;">Signup</h2>
+    <%= form.label :name, "Name:" %>
+    <%= form.text_field :name %>
+    <%= form.label :email, "Email:" %>
+    <%= form.text_field :email %>
+    <br>
+    <%= form.submit "Signup" %>
+  </div>
+<% end %>
